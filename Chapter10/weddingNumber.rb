@@ -16,7 +16,7 @@ def englishNumber number
 		quadrillion = englishNumber write
 		num_string = num_string + quadrillion + ' quadrillion'
 		if left > 0
-			num_string = num_string + ' '
+			num_string = num_string + ' and'
 		end
 	end
 	write = left/(10 ** 12)
@@ -25,7 +25,7 @@ def englishNumber number
 		trillion = englishNumber write
 		num_string = num_string + trillion + ' trillion'
 		if left > 0
-			num_string = num_string + ' '
+			num_string = num_string + ' and'
 		end
 	end
 	write = left/(10**9)
@@ -34,7 +34,7 @@ def englishNumber number
 		billion = englishNumber write
 		num_string = num_string + billion + ' billion'
 		if left > 0
-			num_string = num_string + ' '
+			num_string = num_string + ' and'
 		end
 	end
 	write = left/(10**6)
@@ -43,7 +43,7 @@ def englishNumber number
 		million = englishNumber write
 		num_string = num_string + million + ' million'
 		if left > 0
-			num_string = num_string + ' '
+			num_string = num_string + ' and'
 		end
 	end
 	write = left/(10**3)
@@ -52,7 +52,7 @@ def englishNumber number
 		thousand = englishNumber write
 		num_string = num_string + thousand + ' thousand'
 		if left > 0
-			num_string = num_string + ' '
+			num_string = num_string + ' and'
 		end
 	end
 	write = left/(100)
@@ -61,7 +61,7 @@ def englishNumber number
 		hundred = englishNumber write
 		num_string = num_string + hundred + ' hundred'
 		if left > 0
-			num_string = num_string + ' '
+			num_string = num_string + ' and'
 		end
 	end
 	write = left/10 
@@ -74,7 +74,7 @@ def englishNumber number
 			num_string = num_string + tens_place[write-1]
 		end
 		if left > 0
-			num_string = num_string + '-'
+			num_string = num_string + ' and'
 		end
 	end
 	write = left
