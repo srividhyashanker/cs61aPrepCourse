@@ -16,6 +16,6 @@ end
 allOggs = shuffle(Dir['**/*.ogg'])
 File.open 'playlist.m3u', 'w' do |f| 
 	allOggs.each do |x|
-		f.write x+"\n"
+		f.write x + "\n"
 	end
 end
