@@ -1,9 +1,15 @@
 puts 'Hi, this is grandma speaking!'
 input = gets.chomp
 count = 0 
-while count != 2
+while count!=3
 	if input == 'BYE'
      	count = count +1
+	else
+		count = 0
+	end
+	if count ==3
+		puts 'OK BYE!!'
+		break
 	end
 	if input != input.upcase
 		puts 'HUH?!  SPEAK UP, SONNY!'
@@ -14,4 +20,3 @@ while count != 2
 		input = gets.chomp
 	end
 end
-puts 'OK BYE!'

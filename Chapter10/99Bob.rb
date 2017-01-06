@@ -85,7 +85,6 @@ def englishNumber number
 	print num_string
 end
 
-
 n = 999
 
 while n > 2

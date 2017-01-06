@@ -1,4 +1,5 @@
 n = 10
+
 while n > 2
 	puts (n.to_s + ' bottles of beer on the wall, ' + n.to_s + ' bottles of beer.')
 	oneLess = n - 1
