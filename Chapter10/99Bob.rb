@@ -85,7 +85,7 @@ def englishNumber number
 	num_string
 end
 
-n = 999
+n = 5
 
 while n > 2
 	puts (englishNumber(n).to_s + ' bottles of beer on the wall, ' + englishNumber(n).to_s + ' bottles of beer.')
@@ -93,7 +93,9 @@ while n > 2
 	puts ('Take one down and pass it around, ' + englishNumber(oneLess).to_s + ' bottles of beer on the wall.')
 	n = n - 1
 end
-puts '2 bottles of beer on the wall, 2 bottles of beer.'
-puts 'Take one down and pass it around,1 bottle of beer on the wall.'
-puts '1 bottle of beer on the wall, 1 bottle of beer.'
+
+
+puts englishNumber(2).to_s + ' bottles of beer on the wall, ' + englishNumber(2).to_s + ' bottles of beer.'
+puts 'Take one down and pass it around, ' + englishNumber(1).to_s + ' bottle of beer on the wall.'
+puts englishNumber(1).to_s + ' bottle of beer on the wall, ' + englishNumber(1).to_s + ' bottle of beer.'
 puts 'Take one down, pass it around, no more bottles of beer on the wall.'
