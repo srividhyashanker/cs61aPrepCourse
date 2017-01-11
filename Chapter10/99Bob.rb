@@ -3,13 +3,13 @@ def englishNumber number
 		return 'Please enter a number that isn\'t negative.' 
 	end
 	if number == 0 
-		return 'zero'
+		return 'Zero'
 	end
 	ones_place = ['one',       'two',      'three', 'four',      'five',     'six', 'seven',     'eight',    'nine']
 	tens_place = ['ten',       'twenty',   'thirty', 'forty',     'fifty',    'sixty','seventy',   'eighty',   'ninety']
 	teenagers  = ['eleven',    'twelve',   'thirteen', 'fourteen',  'fifteen',  'sixteen', 'seventeen', 'eighteen', 'nineteen']
 	left = number
-	num_sring = ' '
+	num_string = '   '
 	write = left/(10 ** 15)
 	left = left - write*(10**15)
 	if write > 0
@@ -82,7 +82,7 @@ def englishNumber number
 	if write > 0
 		num_string = num_string + ones_place[write-1]
 	end
-	print num_string
+	num_string
 end
 
 n = 999
