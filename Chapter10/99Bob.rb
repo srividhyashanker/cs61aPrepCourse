@@ -9,7 +9,7 @@ def englishNumber number
 	tens_place = ['ten',       'twenty',   'thirty', 'forty',     'fifty',    'sixty','seventy',   'eighty',   'ninety']
 	teenagers  = ['eleven',    'twelve',   'thirteen', 'fourteen',  'fifteen',  'sixteen', 'seventeen', 'eighteen', 'nineteen']
 	left = number
-	num_string = '   '
+	num_string = ''
 	write = left/(10 ** 15)
 	left = left - write*(10**15)
 	if write > 0
@@ -88,14 +88,16 @@ end
 n = 5
 
 while n > 2
-	puts (englishNumber(n).to_s + ' bottles of beer on the wall, ' + englishNumber(n).to_s + ' bottles of beer.')
+	x = englishNumber(n).to_s
+	puts x.capitalize + ' bottles of beer on the wall, ' + x.capitalize + ' bottles of beer.'
 	oneLess = n - 1
-	puts ('Take one down and pass it around, ' + englishNumber(oneLess).to_s + ' bottles of beer on the wall.')
+	y = englishNumber(oneLess).to_s
+	puts 'Take one down and pass it around, ' + y.capitalize + ' bottles of beer on the wall.'
 	n = n - 1
 end
 
 
-puts englishNumber(2).to_s + ' bottles of beer on the wall, ' + englishNumber(2).to_s + ' bottles of beer.'
-puts 'Take one down and pass it around, ' + englishNumber(1).to_s + ' bottle of beer on the wall.'
-puts englishNumber(1).to_s + ' bottle of beer on the wall, ' + englishNumber(1).to_s + ' bottle of beer.'
+puts englishNumber(2).capitalize.to_s + ' bottles of beer on the wall, ' + englishNumber(2).capitalize.to_s + ' bottles of beer.'
+puts 'Take one down and pass it around, ' + englishNumber(1).capitalize.to_s + ' bottle of beer on the wall.'
+puts englishNumber(1).capitalize.to_s + ' bottle of beer on the wall, ' + englishNumber(1).capitalize.to_s + ' bottle of beer.'
 puts 'Take one down, pass it around, no more bottles of beer on the wall.'
