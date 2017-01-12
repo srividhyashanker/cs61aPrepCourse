@@ -88,16 +88,14 @@ end
 n = 5
 
 while n > 2
-	x = englishNumber(n).to_s
-	puts x.capitalize + ' bottles of beer on the wall, ' + x.capitalize + ' bottles of beer.'
+	puts englishNumber(n).capitalize + ' bottles of beer on the wall, ' + englishNumber(n) + ' bottles of beer.'
 	oneLess = n - 1
-	y = englishNumber(oneLess).to_s
-	puts 'Take one down and pass it around, ' + y.capitalize + ' bottles of beer on the wall.'
+	puts 'Take one down and pass it around, ' + englishNumber(oneLess) + ' bottles of beer on the wall.'
 	n = n - 1
 end
 
 
-puts englishNumber(2).capitalize.to_s + ' bottles of beer on the wall, ' + englishNumber(2).capitalize.to_s + ' bottles of beer.'
-puts 'Take one down and pass it around, ' + englishNumber(1).capitalize.to_s + ' bottle of beer on the wall.'
-puts englishNumber(1).capitalize.to_s + ' bottle of beer on the wall, ' + englishNumber(1).capitalize.to_s + ' bottle of beer.'
+puts englishNumber(2).capitalize + ' bottles of beer on the wall, ' + englishNumber(2) + ' bottles of beer.'
+puts 'Take one down and pass it around, ' + englishNumber(1) + ' bottle of beer on the wall.'
+puts englishNumber(1).capitalize + ' bottle of beer on the wall, ' + englishNumber(1) + ' bottle of beer.'
 puts 'Take one down, pass it around, no more bottles of beer on the wall.'
